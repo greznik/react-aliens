@@ -12,7 +12,10 @@ const store = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 /* eslint-enable */
-
+export const START_GAME = "START_GAME";
+export const startGame = () => ({
+  type: START_GAME
+});
 ReactDOM.render(
   <Provider store={store}>
     <Game />
